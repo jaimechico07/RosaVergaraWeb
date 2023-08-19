@@ -1,0 +1,106 @@
+.footer {
+  @apply bg-primary-gray-200 text-[15px];
+
+  &__container {
+    @apply container;
+  }
+
+  &__content {
+    @apply flex flex-col gap-5 lg:flex-row lg:justify-between;
+  }
+
+  &__title-3 {
+    @apply bg-primary-pink-100 font-comfortaa;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__containt-img {
+    @apply flex flex-col items-center lg:items-start mt-10;
+  }
+
+  &__img {
+    @apply w-[100px] h-[63px] lg:w-40 lg:h-20;
+  }
+
+  &__group-grid {
+    @apply flex flex-col-reverse lg:flex-row lg:items-start;
+  }
+
+  &__grid {
+    @apply flex flex-col items-center gap-4 text-center lg:text-left lg:items-start mx-4 lg:my-10 xl:mx-10;
+  }
+
+  &__grid-2 {
+    @apply order-none lg:order-1 flex flex-col items-center gap-4 text-center lg:text-left lg:items-start mx-4 lg:my-10 xl:mx-10;
+  }
+
+  &__tittle {
+    @apply lg:bg-primary-pink-200 text-xl bg-primary-600 font-bold;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__flex-group {
+    @apply flex gap-6 lg:flex-col;
+  }
+
+  &__link {
+    @apply text-parrafo-normal-100 hover:text-parrafo-hover-100 transition-colors duration-300;
+
+    &--contacto {
+      @apply break-all;
+    }
+  }
+
+  &__link-icon {
+    @apply hover:text-primary-700 text-primary-400 lg:hidden lg:text-primary-700 text-3xl transition-colors duration-200;
+  }
+
+  &__flex {
+    @apply flex gap-5 items-center;
+  }
+
+  &__text {
+    @apply hidden hover:text-parrafo-hover-100 text-parrafo-normal-100 transition-colors duration-200 lg:flex items-center gap-4;
+
+    &:hover .footer__icon--desktop {
+      @apply text-primary-700;
+    }
+  }
+
+  &__text-grid {
+    @apply hover:text-parrafo-hover-100 text-parrafo-normal-100  font-bold;
+  }
+
+  &__contactos {
+    @apply flex flex-col items-center gap-4 mb-5 text-center lg:hidden;
+  }
+
+  &__tel {
+    @apply hover:text-primary-700 text-primary-400 lg:text-primary-700 text-3xl transition-colors duration-200 text-[15px];
+  }
+
+  &__contac {
+    @apply hover:text-parrafo-hover-100 text-parrafo-normal-100 lg:hidden font-bold break-all;
+  }
+
+  &__bottom {
+    @apply border-t-[1px] text-primary-600 border-solid py-4 text-xs;
+  }
+
+  &__copy {
+    @apply text-center text-parrafo-normal-100;
+  }
+
+  &__icon {
+    &--desktop {
+      @apply text-primary-400 text-3xl transition-colors duration-200;
+    }
+  }
+
+  &__agencia {
+    @apply font-bold hover:text-parrafo-hover-100 text-parrafo-normal-100 transition-colors duration-200;
+  }
+}

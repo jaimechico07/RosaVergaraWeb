@@ -1,0 +1,86 @@
+.swiper {
+  @apply w-full flex;
+
+  &--days {
+    @apply flex lg:hidden bg-primary-gray-200 rounded-3xl;
+
+    .swiper-wrapper {
+      @apply py-7 container;
+    }
+
+    .swiper-slide {
+      @apply flex opacity-70 flex-col text-center gap-5 shadow-primary-gray-100 rounded-3xl;
+    }
+
+    .swiper__slide-container {
+      @apply py-8 border-4 border-transparent;
+    }
+
+    .swiper--activo {
+      @apply opacity-100 bg-primary-pink-300 border-4 border-transparent bg-origin-border;
+
+      background-clip: content-box, border-box;
+    }
+  }
+
+  &--packs {
+    @apply flex justify-center max-w-2xl;
+
+    & .swiper-wrapper {
+      @apply flex pt-7;
+    }
+
+    & .swiper-slide {
+      @apply flex bg-primary-gray-200 flex-col text-center rounded-3xl text-white gap-8 justify-between;
+    }
+
+    & .swiper-slide img {
+      @apply w-full h-[191px] object-cover object-top;
+    }
+
+    .swiper-button-prev {
+      @apply hidden lg:block;
+    }
+
+    .swiper-button-next {
+      @apply hidden lg:block;
+    }
+
+    .swiper-slide-active,
+    .swiper-slide-next,
+    .swiper-slide-prev {
+      @apply h-auto;
+    }
+
+    .swiper-horizontal > .swiper-pagination-progressbar,
+    .swiper-pagination-progressbar.swiper-pagination-horizontal,
+    .swiper-vertical
+      > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+    .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite {
+      @apply h-[6px] rounded-full bg-primary-pink-700;
+    }
+
+    .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+      @apply rounded-full bg-primary-pink-200;
+    }
+  }
+
+  &--escuela {
+    @apply w-full justify-center;
+
+    & .swiper-pagination-bullet {
+      @apply bg-primary-700;
+    }
+
+    & .swiper-pagination-bullet-active {
+      @apply bg-primary-500;
+    }
+
+    & .swiper-slide {
+      @apply w-[500px];
+    }
+    & .swiper-slide .swiper-slide-active {
+      @apply mr-0;
+    }
+  }
+}

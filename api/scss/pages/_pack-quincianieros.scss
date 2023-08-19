@@ -1,0 +1,24 @@
+.section-pack {
+  @apply bg-cover bg-no-repeat lg:mt-52;
+
+  &__card {
+    @apply bg-primary-gray-200 rounded-3xl py-20 px-4 sm:px-16 lg:w-fit lg:px-28 flex flex-col gap-10 relative;
+  }
+
+  &__title,
+  &__title-pack,
+  &__title-completo {
+    @apply bg-primary-pink-100 [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] [background-clip:text];
+  }
+
+  &__title {
+    @apply heading-secondary;
+  }
+  &__title-pack {
+    @apply font-bold font-fugaz-one text-xl sm:text-2xl md:text-3xl text-center;
+  }
+
+  &__title-completo {
+    @apply font-bold font-fugaz-one text-lg sm:text-xl md:text-2xl text-center;
+  }
+}

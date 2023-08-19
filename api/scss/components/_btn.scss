@@ -1,0 +1,95 @@
+.btn {
+  &--primary {
+    @apply bg-primary-pink-100 text-parrafo-hover-100 rounded-full hover:text-primary-700 hover:bg-primary-pink-400 transition duration-200 bg-origin-border border-4 border-transparent;
+    background-clip: content-box, border-box;
+  }
+
+  &--primary-outline {
+    @apply border-[2px] border-primary-500 text-primary-500 rounded-full text-center hover:bg-primary-pink-200 hover:text-white;
+  }
+
+  &--cotiza {
+    @apply bg-primary-pink-600 text-parrafo-hover-100 rounded-full hover:text-primary-700 hover:bg-primary-pink-400 transition duration-200 bg-origin-border border-4 border-transparent;
+    background-clip: content-box, border-box;
+  }
+
+  &--home-servicios {
+    @apply py-5 bg-primary-pink-200 block rounded-b-3xl;
+  }
+
+  &--sublist-desktop {
+    @apply text-parrafo-normal-100 transition-all duration-200 hover:text-parrafo-hover-100 py-6;
+  }
+
+  &--sublist-desktop-active {
+    @apply bg-primary-pink-500 text-parrafo-hover-100 py-6 px-4;
+  }
+
+  &--dropdown {
+    @apply flex items-center gap-2 justify-center relative transition-opacity duration-200;
+  }
+
+  &--hero {
+    @apply w-fit;
+  }
+
+  &--dropdown-hidden {
+    @apply opacity-0;
+  }
+
+  &--open-nav-mobile {
+    @apply rounded-md border-2 border-transparent bg-primary-pink-300 bg-origin-border;
+    background-clip: content-box, border-box;
+  }
+
+  &__icon {
+    &--open-nav-mobile {
+      @apply text-xl bg-primary-pink-200 px-2 py-1;
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &--close-nav-mobile {
+      @apply text-3xl bg-primary-pink-200 px-2;
+
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    &--hidden {
+      @apply hidden;
+    }
+  }
+
+  &__span {
+    &--primary {
+      @apply px-7 py-2 block;
+    }
+
+    &--hero {
+      @apply py-2 px-14 block;
+    }
+  }
+
+  &__hr {
+    @apply border-t-0 transition-all duration-200;
+
+    &--sublist {
+      @apply absolute top-full w-full h-[2px] rounded-2xl;
+    }
+
+    &--active {
+      @apply bg-primary-pink-200;
+    }
+
+    &--sublist-active {
+      @apply bg-parrafo-hover-100;
+    }
+  }
+
+  //Boton de contacto
+  &--form {
+    @apply rounded-full bg-primary-pink-100 border-2 px-8 border-none  w-full h-[50px] text-parrafo-hover-100 hover:text-white   font-bold hover:bg-primary-pink-600  text-xl;
+  }
+}

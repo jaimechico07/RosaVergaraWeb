@@ -1,0 +1,170 @@
+.nav {
+  &--main {
+    @apply container py-4 lg:py-0 lg:bg-primary-pink-300 lg:border-4 lg:border-transparent lg:bg-origin-border lg:px-0 lg:rounded-[75px];
+    background-clip: content-box, border-box;
+  }
+
+  &--mobile {
+    @apply lg:hidden pointer-events-none invisible absolute top-full w-full bg-primary-gray-200 grid place-items-center translate-y-[2px] text-primary-700;
+  }
+
+  &--redes-sociales {
+    @apply text-parrafo-hover-100 transition-colors duration-300 hidden lg:flex flex-col gap-5 text-2xl items-center w-fit pl-5 absolute;
+  }
+
+  &--active {
+    @apply h-[calc(100vh-74px)] visible pointer-events-auto animatecss-bounceInDown animatecss-fast w-full;
+
+    // Activar los items cuando el nav este activo
+    .nav__item {
+      @apply visible pointer-events-auto opacity-100;
+    }
+
+    .nav__item--active {
+      @apply text-primary-700;
+    }
+
+    // Setear el tamaño de la linea al 100%
+    .nav__hr {
+      @apply w-full;
+    }
+  }
+
+  &--inactive {
+    @apply visible pointer-events-auto h-[calc(100vh-74px)]  animatecss-bounceOutUp w-full animatecss-fast;
+
+    .nav__hr {
+      @apply w-full;
+    }
+  }
+
+  &--hidden {
+    @apply invisible pointer-events-none opacity-0 h-[calc(100vh-74px)] w-full;
+  }
+
+  &__list {
+    &--main {
+      @apply lg:px-11  gap-9 xl:gap-12 flex justify-between items-center lg:justify-start;
+    }
+
+    &--mobile {
+      @apply flex flex-col relative gap-7 justify-center items-center w-full container h-[calc(100vh-74px)];
+    }
+
+    &--redes-sociales {
+      @apply flex flex-col gap-3;
+    }
+  }
+
+  &__link {
+    &--redes-sociales {
+      @apply bg-primary-700 p-2 rounded-full flex  hover:text-primary-700 transition-colors duration-300 hover:bg-parrafo-hover-100;
+    }
+  }
+
+  &__item {
+    &--main {
+      @apply transition-colors duration-200 hover:text-parrafo-hover-100 hidden lg:flex flex-col items-center;
+    }
+
+    &--mobile {
+      @apply invisible pointer-events-none opacity-0 transition-all duration-200;
+    }
+
+    &--mobile-menu {
+      @apply absolute top-10 invisible pointer-events-none opacity-0 left-1/2 -translate-x-1/2 w-[90%] sm:w-[94%] md:w-[82%] text-center bg-primary-gray-200 shadow-primary-gray-100 rounded-3xl text-primary-900 font-comfortaa text-2xl py-[14px] font-bold tracking-tight before:content-[''] before:w-7 before:h-7 before:absolute before:top-0 before:right-0 before:bg-primary-pink-100 before:rounded-full;
+    }
+
+    &--sublist {
+      @apply flex flex-col gap-3 items-center w-fit bg-transparent transition-all duration-200 rounded-xl;
+    }
+
+    &--sublist-desktop {
+      @apply text-parrafo-hover-100;
+    }
+
+    &--sublist-active {
+      @apply bg-primary-pink-100 w-full text-parrafo-hover-100  py-4;
+    }
+
+    &:where(&--logo, &--burger) {
+      @apply block;
+    }
+
+    &--logo {
+      @apply mr-auto;
+    }
+
+    &--burger {
+      @apply lg:hidden;
+    }
+
+    &--active {
+      @apply text-parrafo-hover-100 translate-y-[1px];
+    }
+  }
+
+  &__icon {
+    &--redes-sociales {
+      @apply mx-auto;
+    }
+  }
+
+  &__hr {
+    @apply border-t-0;
+
+    &--active {
+      @apply w-[120%] bg-primary-pink-200 h-[2px] rounded-2xl;
+    }
+
+    &--sublist-active {
+      @apply w-full bg-parrafo-hover-100 h-[2px] rounded-2xl;
+    }
+
+    &--redes-sociales {
+      @apply bg-primary-700 w-1 h-32 rounded-2xl;
+    }
+  }
+
+  &__subitem {
+    &--main {
+      @apply w-fit;
+    }
+  }
+
+  &__sublist {
+    // Estados para móvil
+    &--mobile {
+      @apply absolute invisible pointer-events-none flex flex-col items-center gap-2;
+    }
+
+    &--active {
+      @apply visible pointer-events-auto animatecss-bounceInDown animatecss-faster static;
+    }
+
+    &--inactive {
+      @apply visible pointer-events-auto animatecss-bounceOutUp animatecss-faster static;
+    }
+
+    &--hidden {
+      @apply invisible pointer-events-none absolute;
+    }
+
+    // Estados para desktop
+    &--main {
+      @apply absolute invisible pointer-events-none top-full bg-primary-pink-500 py-7 px-4 rounded-b-3xl -translate-y-[4px] flex flex-col gap-2;
+    }
+
+    &--active-desktop {
+      @apply visible pointer-events-auto animatecss-bounceInDown animatecss-faster;
+    }
+
+    &--inactive-desktop {
+      @apply visible pointer-events-auto animatecss-bounceOutUp animatecss-faster;
+    }
+
+    &--hidden-desktop {
+      @apply invisible pointer-events-none absolute;
+    }
+  }
+}

@@ -1,0 +1,259 @@
+.section-home-hero {
+  @apply grid;
+
+  &__picture {
+    @apply row-start-1 col-start-1;
+  }
+
+  &__img {
+    @apply w-full h-full object-cover object-center;
+  }
+
+  &__heading {
+    @apply row-start-1 col-start-1 grid items-center place-content-start pt-32 sm:pt-40 lg:pt-72 lg:pl-44 container gap-y-16;
+  }
+
+  &__text {
+    @apply relative max-w-[77%] lg:max-w-[50%];
+  }
+
+  &__figure {
+    @apply absolute -bottom-7 -right-3 rotate-[48deg] lg:rotate-0 lg:-bottom-3 lg:right-24 xl:bottom-1 xl:-right-10;
+  }
+
+  &__span {
+    @apply bg-primary-pink-100;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.section-a-quien-esta-dirigido {
+  @apply mb-10 grid;
+
+  &__title {
+    @apply bg-primary-pink-200;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__figure {
+    @apply row-start-1 col-start-1;
+  }
+
+  &__img {
+    @apply block w-full h-full object-cover;
+  }
+
+  &__bg {
+    @apply row-start-1 col-start-1 container grid place-content-center lg:justify-end;
+  }
+
+  &__card {
+    @apply bg-primary-gray-200 rounded-3xl py-9 px-8 flex flex-col gap-5 my-4 lg:gap-10 xl:py-11 xl:px-28;
+  }
+
+  &__lista {
+    @apply grid gap-y-2 lg:grid-cols-2 lg:gap-x-10;
+  }
+
+  &__item {
+    @apply flex items-baseline;
+  }
+
+  &__icon {
+    @apply pr-3 text-xl text-primary-700;
+  }
+
+  &__p {
+    @apply text-base text-parrafo-hover-100;
+  }
+}
+
+.section-porque-elegirnos {
+  @apply lg:relative mb-7 grid;
+
+  &__figure {
+    @apply w-full h-[90vh] lg:block hidden row-start-1 col-start-1;
+  }
+
+  &__img {
+    @apply w-full object-cover h-full;
+  }
+
+  &__content {
+    @apply row-start-1 col-start-1 grid lg:justify-start items-center lg:container;
+  }
+
+  &__text {
+    @apply flex flex-col gap-16  bg-primary-gray-200 rounded-3xl w-full py-10 lg:pt-10 lg:pb-16;
+  }
+
+  &__heading {
+    @apply container;
+  }
+
+  &__span {
+    @apply bg-primary-pink-100;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__title {
+    @apply bg-primary-gray-200 lg:shadow-none shadow-primary-gray-100 py-4 px-11 rounded-3xl;
+  }
+
+  &__contentCard {
+    @apply text-center lg:text-left  text-white  grid gap-10 sm:grid-cols-[repeat(auto-fit,_minmax(250px,_1fr))] place-content-center px-10 lg:grid-cols-2;
+  }
+
+  &__card {
+    @apply relative bg-primary-gray-300 rounded-3xl shadow-primary-gray-100 pt-8 pb-6 px-5 lg:p-7 w-full lg:w-80;
+  }
+
+  &__subTitle {
+    @apply font-fugaz-one text-dynamic-h3 text-primary-600;
+  }
+
+  &__infoCard {
+    @apply flex flex-col gap-5;
+  }
+
+  &__cardCircle {
+    @apply w-[25px] h-[25px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px] top-0 right-0 bg-primary-pink-100 rounded-full absolute flex justify-center items-center;
+
+    &--1 {
+      @apply hidden md:block lg:w-7;
+    }
+  }
+
+  &__p {
+    @apply text-base lg:text-sm lg:pr-9 font-comfortaa;
+  }
+
+  &__icon {
+    @apply text-primary-600 text-5xl;
+
+    &--1 {
+      @apply md:hidden block;
+    }
+  }
+}
+
+.section-hora-atencion {
+  @apply flex flex-col gap-8 items-center mb-16;
+
+  &__heading {
+    @apply container lg:w-fit;
+  }
+
+  &__title {
+    @apply text-white bg-primary-gray-200 shadow-primary-gray-100 md:px-24 py-1 px-11 rounded-full;
+  }
+
+  &__title-3 {
+    @apply bg-primary-pink-100 font-fugaz-one;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__span {
+    @apply bg-primary-pink-100;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  // Cards para desktop
+  &__days {
+    @apply hidden lg:flex lg:flex-wrap justify-center gap-7 text-center  bg-primary-gray-200 rounded-3xl container py-10;
+  }
+
+  &__cardDays {
+    @apply grid gap-5 bg-primary-gray-200  rounded-3xl  shadow-primary-gray-100;
+
+    &--activo {
+      @apply opacity-100 bg-primary-pink-300 border-4 border-transparent bg-origin-border scale-110;
+
+      background-clip: content-box, border-box;
+    }
+  }
+
+  &__card-container {
+    @apply py-11 px-5;
+  }
+
+  &__hora {
+    @apply text-dynamic-des text-white font-fugaz-one;
+  }
+
+  &__p {
+    @apply text-white text-dynamic-des font-fugaz-one;
+  }
+
+  &__contentUbi {
+    @apply container;
+  }
+
+  &__bg {
+    @apply bg-primary-gray-200 rounded-3xl py-10 px-6 flex flex-col gap-10 shadow-primary-gray-100;
+  }
+
+  &__title-ubi {
+    @apply bg-primary-pink-100;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__card {
+    @apply flex flex-wrap md:justify-center gap-y-6 gap-x-20;
+  }
+
+  &__contDire {
+    @apply flex gap-3 text-white items-center;
+  }
+
+  &__desUbi {
+    @apply text-dynamic-des font-comfortaa;
+  }
+
+  &__icon {
+    @apply text-primary-700 text-xl;
+  }
+}
+
+.section-servicios-packs {
+  @apply gap-7 flex flex-col items-center container py-10;
+
+  &__title {
+    @apply bg-primary-gray-200 shadow-primary-gray-100 md:px-56 w-full py-2 rounded-3xl;
+  }
+
+  &__title-3 {
+    @apply leading-6 font-fugaz-one md:leading-10 bg-primary-pink-100;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__subheading {
+    @apply pt-10 pb-6 px-6 flex flex-col gap-5;
+  }
+
+  &__span {
+    @apply bg-primary-pink-100;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

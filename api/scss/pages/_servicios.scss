@@ -1,0 +1,57 @@
+.section-servicios {
+  @apply container flex flex-col gap-8 mt-7 mb-16 lg:mt-60;
+
+  &__contTitle {
+    @apply flex flex-wrap justify-center bg-primary-gray-200 rounded-full lg:max-w-xl px-8;
+  }
+
+  &__title {
+    @apply font-fugaz-one bg-primary-pink-200 py-1 text-dynamic-h2 text-center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__contentImages {
+    @apply flex flex-wrap gap-6 items-center justify-center;
+  }
+
+  &__figureCont {
+    @apply relative lg:w-full border-2 lg:border-0 border-transparent rounded-3xl flex flex-col gap-3;
+
+    &:hover {
+      @apply border-2 lg:border-0 rounded-3xl border-pink-500;
+    }
+
+    &:hover > img {
+      @apply blur-sm;
+    }
+  }
+
+  &__imgDesktop {
+    @apply lg:block hidden lg:w-full;
+  }
+
+  &__imgMobile {
+    @apply block lg:hidden;
+  }
+
+  &__subtitle {
+    @apply absolute top-6 lg:top-14 xl:top-20 2xl:top-24 left-5 lg:left-[100px] text-white text-base lg:text-dynamic-h3 leading-4  font-fugaz-one pr-4;
+  }
+
+  &__arrow {
+    @apply absolute bottom-8 left-[70px] lg:hidden  text-3xl text-white;
+  }
+
+  &__capa {
+    @apply lg:gap-3 lg:top-0 hidden lg:block lg:absolute lg:font-fugaz-one lg:w-full lg:h-full lg:opacity-0 lg:rounded-2xl  xl:rounded-3xl 2xl:rounded-[30px];
+
+    &:hover {
+      @apply lg:opacity-100 lg:transition-all lg:duration-300 lg:last:ease-in;
+    }
+  }
+
+  &__showArrow {
+    @apply text-white flex absolute lg:top-12 xl:top-16  2xl:top-20 gap-6 right-24 items-center text-dynamic-h3;
+  }
+}

@@ -1,0 +1,16 @@
+body {
+  @apply font-comfortaa bg-body;
+}
+
+// Para los headings: h1, h2, h3, etc.
+.heading-primary {
+  @apply text-parrafo-hover-100 font-fugaz-one text-dynamic-h1;
+}
+
+.heading-secondary {
+  @apply font-bold font-fugaz-one text-center text-dynamic-h2;
+}
+
+.heading-tertiary {
+  @apply font-bold text-center text-dynamic-h3;
+}

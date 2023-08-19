@@ -1,0 +1,15 @@
+@forward "base/";
+@forward "components/";
+@forward "layout/";
+@forward "pages/";
+@forward "vendors/";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Fuente Fugaz One
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap");
+
+// Fuente Comfortaa
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;600;700&display=swap");

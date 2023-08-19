@@ -1,0 +1,33 @@
+.section-escuela {
+  @apply w-full mb-16;
+
+  &__container {
+    @apply container flex flex-col mt-10 lg:mt-64 px-0 lg:px-40;
+  }
+
+  &__decorator {
+    @apply w-2/3 lg:w-1/2 h-[50px] bg-primary-gray-300 rounded-full self-center lg:self-end shadow-primary-gray-100;
+  }
+
+  &__container-swiper {
+    @apply relative bg-primary-gray-300 rounded-b-none rounded-t-2xl  lg:rounded-2xl text-center shadow-primary-gray-100;
+  }
+
+  &__circle {
+    @apply absolute right-0 top-0 rounded-full bg-primary-600 w-[30px] h-[30px] lg:w-[40px] lg:h-[40px];
+  }
+
+  &__title {
+    @apply py-5 font-bold text-dynamic-h2 font-fugaz-one bg-primary-pink-100;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__img {
+    @apply w-full mx-auto pb-20;
+  }
+
+  &__pagination {
+    @apply pb-5;
+  }
+}

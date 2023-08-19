@@ -1,0 +1,19 @@
+.section-hero-nosotros {
+  @apply lg:mt-52;
+}
+.section-valores-marca {
+  @apply container;
+
+  &__heading-wrapper {
+    @apply bg-primary-gray-200 rounded-full;
+    @apply inline-block;
+  }
+
+  &__title {
+    font-size: clamp(1.5625rem, 0.6vw + 1.5rem, 2.125rem);
+  }
+}
+
+.section-mision-vision {
+  @apply container;
+}

@@ -1,0 +1,65 @@
+.section-contacto {
+  @apply lg:grid mt-6 mb-20 lg:mt-56;
+
+  &__figure {
+    @apply row-start-1 col-start-1;
+  }
+
+  &__img {
+    @apply hidden lg:block w-full h-full object-cover 2xl:max-h-[80vh];
+  }
+
+  &__containt {
+    @apply row-start-1 col-start-1 2xl:ml-40  md:container grid place-content-center lg:justify-start;
+  }
+
+  &__bg {
+    @apply bg-primary-gray-200 relative rounded-b-3xl rounded-l-3xl;
+  }
+
+  &__title {
+    @apply bg-primary-pink-200;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__link {
+    @apply rounded-r-xl bg-primary-gray-300 p-5;
+  }
+
+  &__icon {
+    @apply flex text-primary-700 text-3xl;
+  }
+
+  &__formulario {
+    @apply container;
+  }
+
+  &__form-group {
+    @apply py-3;
+  }
+
+  &__sub {
+    @apply font-bold text-primary-700 text-base;
+  }
+
+  &__input {
+    @apply mt-1 px-3 py-4  border-2 bg-transparent placeholder-parrafo-normal-100 rounded-full border-primary-400 w-full text-sm;
+  }
+
+  &__txt-area {
+    @apply mt-1 px-3 pt-3 pb-14 lg:pb-20 resize-none border-2 bg-transparent  placeholder-parrafo-normal-100 rounded-3xl border-primary-400 w-full text-sm;
+  }
+
+  &__select {
+    @apply mt-1 px-3 py-4  border-2 bg-transparent text-parrafo-normal-100 rounded-3xl border-primary-400 w-56 md:w-[17rem] text-sm bg-primary-gray-200;
+  }
+
+  &__boton {
+    @apply md:container  pt-8 pb-14;
+  }
+
+  &__redes-sociales {
+    @apply hidden absolute lg:flex flex-col gap-5 text-center -right-[65px] top-0;
+  }
+}
