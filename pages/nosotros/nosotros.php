@@ -8,7 +8,6 @@
     <?php
     include_once("section-hero-nosotros/setion-hero-nosotros.php");
     include_once("section-valores-marca/section-valores-marca.php");
-    include_once("section-mision-vision/section-mision-vision.php");
     ?>
   </main>
 

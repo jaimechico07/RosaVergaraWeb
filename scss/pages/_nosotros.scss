@@ -6,6 +6,22 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
+  &__content {
+    @apply grid grid-cols-1 lg:grid-cols-2 py-28;
+  }
+
+  &__card {
+    @apply lg:col-start-2 lg:col-end-3 relative bg-primary-gray-200 p-10 rounded-3xl;
+  }
+
+  &__description {
+    @apply text-white  font-fugaz-one;
+  }
+
+  &__circle {
+    @apply absolute top-0 left-0 p-3 bg-primary-pink-200 rounded-full;
+  }
 }
 .section-valores-marca {
   @apply container py-16 md:py-28;
@@ -18,6 +34,22 @@
     @apply font-fugaz-one bg-primary-pink-200 py-1 px-7 text-dynamic-h2 text-center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  &__cont-card {
+    @apply grid grid-cols-1 md:grid-cols-2 mt-10 md:mt-16 gap-6;
+  }
+
+  &__card {
+    @apply bg-primary-gray-200 p-6 rounded-3xl relative;
+  }
+
+  &__description {
+    @apply text-white font-fugaz-one text-center;
+  }
+
+  &__circleCard {
+    @apply absolute w-10 h-10 bg-primary-pink-200 rounded-full top-0 left-0;
   }
 }
 

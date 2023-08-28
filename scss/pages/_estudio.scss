@@ -79,7 +79,7 @@
 
 .section-clases {
   //lg:pl-44
-  @apply container pt-10;
+  @apply container py-10;
   &__title {
     @apply bg-primary-pink-100 [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] [background-clip:text];
   }
