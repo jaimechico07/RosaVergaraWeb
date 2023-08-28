@@ -1,16 +1,23 @@
 .section-hero-nosotros {
-  @apply lg:mt-52;
+  @apply lg:mt-48 bg-hero-nous bg-cover bg-center;
+
+  &__title {
+    @apply font-fugaz-one bg-primary-pink-200 py-1 text-dynamic-h2 text-start;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 .section-valores-marca {
-  @apply container;
+  @apply container py-16 md:py-28;
 
   &__heading-wrapper {
-    @apply bg-primary-gray-200 rounded-full;
-    @apply inline-block;
+    @apply rounded-full flex justify-center w-full;
   }
 
   &__title {
-    font-size: clamp(1.5625rem, 0.6vw + 1.5rem, 2.125rem);
+    @apply font-fugaz-one bg-primary-pink-200 py-1 px-7 text-dynamic-h2 text-center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 

@@ -47,6 +47,7 @@ module.exports = {
           "linear-gradient(5deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 10%, rgba(0,0,0,0) 100%), url('/img/hero-estudio-mobile.png')",
         "hero-estudio-desktop":
           "linear-gradient(45deg,rgba(0, 0, 0, 0.8) 0%,rgba(0,0,0,.0) 42.07% ), url('/img/hero-estudio-desktop.png')",
+        "hero-nous": "url('/img/hero-estudio-desktop.png')",
       },
       boxShadow: {
         "primary-gray-100": "-40px 0px 65px #333333",
