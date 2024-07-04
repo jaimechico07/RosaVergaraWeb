@@ -5,7 +5,7 @@
   echo headerEl("subservicios"); ?>
 
   <main>
-    <h1>Pack moda publicidad</h1>
+    <?php include_once("section-pack/section-pack.php") ?>
   </main>
 
   <?php include_once(__DIR__ . "../../../components/footer.php");

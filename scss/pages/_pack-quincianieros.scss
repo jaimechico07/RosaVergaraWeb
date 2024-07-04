@@ -1,5 +1,5 @@
 .section-pack {
-  @apply bg-cover bg-no-repeat lg:mt-52;
+  @apply bg-cover bg-no-repeat;
 
   &__card {
     @apply bg-primary-gray-200 rounded-3xl py-20 px-4 sm:px-16 lg:w-fit lg:px-28 flex flex-col gap-10 relative;

@@ -734,7 +734,7 @@ body {
 }
 
 .section-pack {
-  @apply bg-cover bg-no-repeat lg:mt-52;
+  @apply bg-cover bg-no-repeat;
 }
 .section-pack__card {
   @apply bg-primary-gray-200 rounded-3xl py-20 px-4 sm:px-16 lg:w-fit lg:px-28 flex flex-col gap-10 relative;
@@ -821,4 +821,4 @@ body {
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
+@tailwind utilities;/*# sourceMappingURL=base.css.map */

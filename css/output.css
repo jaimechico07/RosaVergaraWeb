@@ -3661,12 +3661,6 @@ body{
   background-repeat: no-repeat;
 }
 
-@media (min-width: 1024px){
-  .section-pack{
-    margin-top: 13rem;
-  }
-}
-
 .section-pack__card{
   position: relative;
   display: flex;
@@ -4771,8 +4765,28 @@ video {
     background-image: linear-gradient(45deg,rgba(0, 0, 0, 0.8) 0%,rgba(0,0,0,.0) 42.07% ), url('/img/hero-estudio-desktop.png');
   }
 
+  .md\:bg-\[url\(https\:\/\/i\.postimg\.cc\/1zbyhVSH\/maquillaje-Social\.png\)\]{
+    background-image: url(https://i.postimg.cc/1zbyhVSH/maquillaje-Social.png);
+  }
+
+  .md\:bg-\[url\(https\:\/\/i\.postimg\.cc\/tgs9MtKJ\/maquillaje-Moda\.png\)\]{
+    background-image: url(https://i.postimg.cc/tgs9MtKJ/maquillaje-Moda.png);
+  }
+
+  .md\:bg-\[url\(https\:\/\/i\.postimg\.cc\/X7W7Y5C1\/boda-Clasica\.png\)\]{
+    background-image: url(https://i.postimg.cc/X7W7Y5C1/boda-Clasica.png);
+  }
+
+  .md\:bg-\[url\(https\:\/\/i\.postimg\.cc\/FFjBNkmK\/bodas\.png\)\]{
+    background-image: url(https://i.postimg.cc/FFjBNkmK/bodas.png);
+  }
+
   .md\:bg-\[url\(https\:\/\/i\.postimg\.cc\/6pWYhYdx\/Group-28\.png\)\]{
     background-image: url(https://i.postimg.cc/6pWYhYdx/Group-28.png);
+  }
+
+  .md\:bg-\[url\(https\:\/\/i\.postimg\.cc\/630tPWW6\/maquillaje-Moda\.png\)\]{
+    background-image: url(https://i.postimg.cc/630tPWW6/maquillaje-Moda.png);
   }
 
   .md\:pt-\[12rem\]{
@@ -4799,3 +4813,4 @@ video {
     max-width: initial;
   }
 }
+/*# sourceMappingURL=output.css.map */
